@@ -11,6 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
+        /** Nesta parte do código é criada uma tabela "pessoa" no banco de dados com seus 
+         * respectivos atributos  */
+        
         Schema::create('pessoa', function (Blueprint $table) {
             $table->id();
             $table->string('nome', 50);
